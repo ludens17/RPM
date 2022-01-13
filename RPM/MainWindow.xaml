@@ -1,0 +1,23 @@
+﻿<Window x:Class="RPM.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RPM"
+        mc:Ignorable="d"
+        Title="Приятный шелест" Height="450" Width="800"  Background="#FFFF">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+         
+        </Grid.RowDefinitions>
+        <Border Grid.Column="0" Background="#C6D7FF"/>
+        <StackPanel Grid.Row="0" Orientation="Horizontal">
+            <Button x:Name="btnback" Click="btnback_Click" Width="150" Height="30" FontSize="17" FontFamily="Monotype Corsiva" Background="#46B29D" Foreground="White" Margin="580 0 0 0" >назад</Button>
+            
+        </StackPanel>
+        <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden" Grid.Row="1" ContentRendered="MainFrame_ContentRendered"></Frame>
+        <Image Source=".//res/Приятный шелест.png" HorizontalAlignment="Left"></Image>
+    </Grid>
+</Window>
